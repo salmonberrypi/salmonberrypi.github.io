@@ -15,3 +15,5 @@ Monitoring the operational state of nodes is essential.  Being able to soft rese
 Manipulating the boot state and boot devices is essential. Raspberry Pi firmware has matured and expanded, and [new boot modes](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#http-boot) help.
 
 Storage can't be an afterthought or blended in with general-purpose compute: node specialization is needed.
+
+The unit of a node should be independent of traditional Pi or compute module form factor.
