@@ -1,6 +1,6 @@
 # Background
 
-This project was initially started during the pandemic to focus on something fun, learn, and detract from the madness of the time.  And it includes several experiments.  The more I experimented, the more the broken PCIe bus on the Raspberry Pi CM4 became a detraction in addition to the ever-changing supply chain availability and endless redesigns to work around them. Squirrel!
+I love distributed systems and distributed memory computing fabrics.  This project was initially started during the pandemic to focus on something fun, learn, and detract from the madness of the time.  And it includes several experiments.  The more I experimented, the more the broken PCIe bus on the Raspberry Pi CM4 became a detraction in addition to the ever-changing supply chain availability and endless redesigns to work around them. Squirrel!
 
 Fast forward to 2024, picking this project up again but refocusing this work after some reflection.  And a couple of key tenets emerged.
 
@@ -13,3 +13,5 @@ These are UNIX machines. A terminal server is not optional; out-of-band console 
 Monitoring the operational state of nodes is essential.  Being able to soft reset or power cycle a node is critical.
 
 Manipulating the boot state and boot devices is essential. Raspberry Pi firmware has matured and expanded, and [new boot modes](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#http-boot) help.
+
+Storage can't be an afterthought or blended in with general-purpose compute: node specialization is needed.
