@@ -12,4 +12,4 @@ These are UNIX machines. A terminal server is not optional; out-of-band console 
 
 Monitoring the operational state of nodes is essential.  Being able to soft reset or power cycle a node is critical.
 
-Manipulating the boot state and boot devices is essential. [New boot modes](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#http-boot) help.
+Manipulating the boot state and boot devices is essential. Raspberry Pi firmware has matured and expanded, and [new boot modes](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#http-boot) help.
