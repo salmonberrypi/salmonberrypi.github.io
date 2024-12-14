@@ -16,4 +16,5 @@ Manipulating the boot state and boot devices is essential. Raspberry Pi firmware
 
 Storage can't be an afterthought or blended in with general-purpose compute: node specialization is needed.
 
-The unit of a node should be independent of traditional Pi or compute module form factor.
+The unit of a node should be independent of traditional Pi or compute module form factor. It should be defined by control interfaces and not waste real estate on a specific form factor.  We can print mounts rather than waste PCB on it. More cost-effective and flexible.
+
