@@ -18,3 +18,4 @@ Storage can't be an afterthought or blended in with general-purpose compute: **n
 
 The unit of a node should be **independent of traditional Pi or compute module form factor**. It should be defined by control interfaces and not waste real estate on a specific form factor.  We can print mounts rather than waste PCB on them. More cost-effective and flexible.
 
+Quantities should always be 2^n numbers to make scale out and gain **straight forward modularity**.
