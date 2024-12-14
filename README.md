@@ -6,7 +6,7 @@ Fast forward to 2024, picking this project up again but refocusing this work aft
 
 ## Focus on managing rather than providing
 
-An Ethernet switch on board seems like a great idea.  However, there are more cost effective, more scalable 3rd party offers that offer more flexibility if kept off-board. 
+Given the compactness possible, an Ethernet switch on board seems like a great idea.  However, there are more cost-effective, more scalable 3rd party offers that offer more flexibility if kept off-board. The investment in jacks, cables isn't offset by any perceived compactness or efficiency gains as these switching complexes are complicated in their own right.  And many chipsets from Asia are not really readily available either. 
 
 A terminal server is not really optional, out-of-band access to console is necessary.  There are projects like [freetserv](https://freetserv.github.io) that can be used as inspiration here, although might benefit from modernization given its almost a decade old.
 
