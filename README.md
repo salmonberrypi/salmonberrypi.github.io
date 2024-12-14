@@ -8,7 +8,7 @@ Fast forward to 2024, picking this project up again but refocusing this work aft
 
 An Ethernet switch on board seems like a great idea.  However, there are more cost effective, more scalable 3rd party offers that offer more flexibility if kept off-board. 
 
-A terminal server is not really optional, out-of-band access to console is necessary.
+A terminal server is not really optional, out-of-band access to console is necessary.  There are projects like [freetserv](https://freetserv.github.io) that can be used as inspiration here, although might benefit from modernization given its almost a decade old.
 
 Monitoring operational state of nodes is important.  Being able to soft reset or power cycle a node is important.
 
