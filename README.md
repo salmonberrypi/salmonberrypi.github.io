@@ -23,4 +23,5 @@ Quantities should always be 2<sup>n</sup> numbers to make scale out and gain **s
 ## 
 
 --
+
 &copy; 2024 Christian Kuhtz
