@@ -22,11 +22,17 @@ Quantities should always be 2<sup>n</sup> numbers to make scale out and gain **s
 
 ## An Idea
 
-The dimensions of a Raspberry Pi Compute module (CM) are 40mm W x 55mm H. We can create board(s) to host the CM and provide the needed interfaces to connect various umbillicals to, such as Ethernet, serial console, control signals, etc. We can place a heat exchanger on this board stack to remove heat.
+The dimensions of a Raspberry Pi Compute module (CM) are 40mm W x 55mm H. We can create board(s) to host the CM and provide the needed interfaces to connect various umbillicals to, such as Ethernet, serial console, control signals, etc.
 
-<img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/horizontal.png?raw=true"  width="200"><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/vertical.png?raw=true" width="600">
+Both the "left" and "right" board to board connector on the bottom of the CM actually have very different purposes. Ethernet and GPIO and SD (for a CM-Lite) are on the "left". HDMI, USB, PCIe, etc are all on the "right".  We don't need both for all use cases. A basic compute node, for example, can live without one side of the board connectors.
 
-We can optimize this design further when we place two of these board stacks back to back around a heat exchanger. A single CM is unlikely to produce enough heat to overwhelm the heat exchanger. And we can accomodate taller components on the board in this arrangement if we offset them to one side.
+We can place a fan on this board stack to remove heat. Or we can place a heat exchanger on this board stack.
+
+<img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/horizontal.png?raw=true"  width="400">
+
+We can optimize this design further when we place two of these board stacks back to back around a heat exchanger. A single CM is unlikely to produce enough heat to overwhelm the heat exchanger. And we can accomodate taller components on the board in this arrangement if we offset them to one side.  And irrespective of what we do on the underside for umbillicals, this design will work.
+
+<img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/vertical.png?raw=true" width="600">
 
 --
 
