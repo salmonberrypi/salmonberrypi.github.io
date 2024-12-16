@@ -28,7 +28,7 @@ Both the "left" and "right" board to board connector on the bottom of the CM act
 
 We can place a fan on this board stack to remove heat. Or we can place a heat exchanger on this board stack.
 
-<img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/horizontal.png?raw=true"  width="400">
+<p align=center><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/horizontal.png?raw=true"  width="400"></p>
 
 We can optimize this design further when we place two of these board stacks back to back around a heat exchanger. A single CM is unlikely to produce enough heat to overwhelm the heat exchanger. And we can accomodate taller components on the board in this arrangement if we offset them to one side.  And irrespective of what we do on the underside for umbillicals, this design will work.
 
