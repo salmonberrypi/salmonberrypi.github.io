@@ -20,7 +20,14 @@ The unit of a node should be **independent of traditional Pi or compute module f
 
 Quantities should always be 2<sup>n</sup> numbers to make scale out and gain **straight forward modularity**.  Not 48. Not 5, 6, or 7. Why? Trade ultimate efficiency for allowing combinations to work better.
 
-## 
+## An Idea
+
+The dimensions of a Raspberry Pi Compute module (CM) are 40mm W x 55mm H. We can create board(s) to host the CM. 
+
+We can place a heat exchanger on the stack to remove heat. We can place two stacks back to back around a heat exchanger to do this with two at the saem time.
+
+![horizontal layout](https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/horizontal.jpg?raw=true)
+![vertical layout](https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/vertical.jpg?raw=true)
 
 --
 
