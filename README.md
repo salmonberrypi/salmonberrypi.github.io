@@ -24,7 +24,7 @@ Quantities should always be 2<sup>n</sup> numbers to make scale out and gain **s
 
 The dimensions of a Raspberry Pi Compute module (CM) are 40mm W x 55mm H. We can create board(s) to host the CM and provide the needed interfaces to connect various umbillicals to, such as Ethernet, serial console, control signals, etc.
 
-Both the "left" and "right" board to board connector on the bottom of the CM actually have very different purposes. Ethernet and GPIO and SD (for a CM-Lite) are on the "left". HDMI, USB, PCIe, etc are all on the "right".  We don't need both for all use cases. A basic compute node, for example, can live without one side of the board connectors.
+Both the "left" and "right" board to board connector on the bottom of the CM actually have very different purposes. Ethernet and GPIO and SD (for a CM-Lite) are on the "left". HDMI, USB, PCIe, etc are all on the "right".  We don't need both for all use cases. A basic compute node, for example, can live without one side of the board connectors. This also removes alignment issues between both board to board connectors if assembled by hand outside the tolerances. Per [GS-20-0793](https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/gs-20-0793.pdf), 0.33mm and 0.192mm are the maximum permissible misalignment distances in X (length) and Y (width) of the Bergstak 0.4 BTB connector.
 
 We can place a fan on this board stack to remove heat. Or we can place a heat exchanger on this board stack.
 
