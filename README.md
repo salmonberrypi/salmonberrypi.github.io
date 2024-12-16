@@ -26,7 +26,7 @@ The dimensions of a Raspberry Pi Compute module (CM) are 40mm W x 55mm H. We can
 
 We can place a heat exchanger on the stack to remove heat. We can place two stacks back to back around a heat exchanger to do this with two at the saem time.
 
-![horizontal layout](https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/horizontal.png?raw=true)
+![horizontal layout](https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/horizontal.png?raw=true | width=100)
 ![vertical layout](https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/vertical.png?raw=true)
 
 --
