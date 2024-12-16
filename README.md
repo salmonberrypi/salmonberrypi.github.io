@@ -22,9 +22,7 @@ Quantities should always be 2<sup>n</sup> numbers to make scale out and gain **s
 
 ## An Idea
 
-The dimensions of a Raspberry Pi Compute module (CM) are 40mm W x 55mm H. We can create board(s) to host the CM. 
-
-We can place a heat exchanger on the stack to remove heat. We can place two stacks back to back around a heat exchanger to do this with two at the same time.
+The dimensions of a Raspberry Pi Compute module (CM) are 40mm W x 55mm H. We can create board(s) to host the CM and provide the needed interfaces to connect various umbillicals to, such as Ethernet, serial console, control signals, etc. We can place a heat exchanger on this board stack to remove heat. We can place two board stacks back to back around a heat exchanger to do this with two at the same time.
 
 <img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/horizontal.png?raw=true"  width="200"><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/vertical.png?raw=true" width="600">
 
