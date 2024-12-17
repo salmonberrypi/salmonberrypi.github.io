@@ -24,7 +24,7 @@ Quantities should always be 2<sup>n</sup> numbers to make scale out and gain **s
 
 ## An Idea
 
-The dimensions of a Raspberry Pi Compute module (CM) are 40mm W x 55mm H. We can create board(s) to host the CM and provide the needed interfaces to connect various umbillicals to, such as Ethernet, serial console, control signals, etc.
+The dimensions of a [Raspberry Pi Compute module](https://datasheets.raspberrypi.com/cm5/cm5-datasheet.pdf) (CM) are 40mm W x 55mm H. We can create board(s) to host the CM and provide the needed interfaces to connect various umbillicals to, such as Ethernet, serial console, control signals, etc.
 
 Both the "left" and "right" board to board connector on the bottom of the CM actually have very different purposes. Ethernet and GPIO and SD (for a CM-Lite) are on the "left". HDMI, USB, PCIe, etc are all on the "right".  
 
