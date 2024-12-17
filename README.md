@@ -28,15 +28,15 @@ The dimensions of a Raspberry Pi Compute module (CM) are 40mm W x 55mm H. We can
 
 Both the "left" and "right" board to board connector on the bottom of the CM actually have very different purposes. Ethernet and GPIO and SD (for a CM-Lite) are on the "left". HDMI, USB, PCIe, etc are all on the "right".  
 
-We don't need both for all use cases. A basic compute node, for example, can live without one side of the board connectors. This also removes alignment issues between both board to board connectors if assembled by hand outside the tolerances. Per [GS-20-0793](https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/gs-20-0793.pdf), 0.33mm and 0.192mm are the maximum permissible misalignment distances in X (length) and Y (width) of the Bergstak 0.4 BTB connector. 
+We don't need both for all use cases. A basic compute node, for example, can live without one side of the board connectors. This also removes alignment issues between both board to board connectors if assembled by hand outside the tolerances. Per [GS-20-0793](https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/gs-20-0793.pdf), 0.33mm and 0.192mm are the maximum permissible misalignment distances in X (length) and Y (width) of the Bergstak 0.4 BTB connector. Both board to board connectors can effectively be aligned independently by adjusting the location of the board, provided the mounting holes provide adequate clearance (this can probably be bounded, but I haven't done the calculation yet).
 
-If we use different stacked mating heights (e.g. 1.5mm vs 4mm), we can gain board real estate without increasing the footprint unnecessarily over what is needed for networking (user-side) and power (substrate-side).
+If we use different stacked mating heights (e.g. 1.5mm vs 4mm), we can gain board real estate without increasing the footprint unnecessarily over what is needed for networking (user-side) and power (substrate-side).  The main board effectively has a cut out that allows for the aux board to be stacked below it using the longer stacked mating height.
 
-We can place a fan on this board stack to remove heat. Or we can place a heat exchanger on this board stack.
+For cooling, we can place a heat sink or fan or both on this board stack to remove heat. Or we can place a heat exchanger on this board stack.
 
 <p align=center><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/horizontal.png?raw=true"  width="400" alt="horizontal view of CM board on substrate"></p>
 
-We can optimize this design further when we place two of these board stacks back to back around a heat exchanger. A single CM is unlikely to produce enough heat to overwhelm the heat exchanger. And we can accomodate taller components on the board in this arrangement if we offset them to one side.  And irrespective of what we do on the underside for umbillicals, this design will work.
+If we use a heat exchanger (like the readily available 40mm x 40mm x 12mm variety), we can optimize this design further when we place two of these board stacks back to back around a heat exchanger. A single CM is unlikely to produce enough heat to overwhelm the heat exchanger. And we can accomodate taller components on the board in this arrangement if we offset them to one side.  And irrespective of what we do on the underside for umbillicals, this design will work.
 
 <p align=center><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/vertical.png?raw=true" width="700" alt="vertical view of single CM and heat exchanger as well as two CMs sandwiching a heat exchanger"></p>
 
