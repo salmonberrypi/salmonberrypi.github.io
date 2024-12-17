@@ -12,7 +12,7 @@ Fast forward to 2024, picking this project up again but refocusing this work aft
 
 These are UNIX machines. A **terminal server** is not optional; out-of-band console access is mandatory.  Some projects like [freetserv](https://freetserv.github.io) can be used as inspiration here, although they might benefit from modernization, given that it is almost a decade old.
 
-Monitoring the operational state of nodes is essential.  Being able to **remotely soft reset or power cycle a node** is critical.
+Monitoring the operational state of nodes is essential.  Being able to **remotely soft reset or power cycle a node** is critical.  Understanding what state the node is in to make sure decisions is a prerequisite.
 
 Manipulating the **boot state and boot devices** is essential. Raspberry Pi firmware has matured and expanded, and [new boot modes](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#http-boot) help.
 
