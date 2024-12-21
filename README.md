@@ -40,6 +40,14 @@ If we use a heat exchanger (like the readily available 40mm x 40mm x 12mm variet
 
 <p align=center><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/vertical.png?raw=true" width="700" alt="vertical view of single CM and heat exchanger as well as two CMs sandwiching a heat exchanger"></p>
 
+## First Draft
+
+A few days later this is the result.
+
+<p align=center><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/first%20draft.png?raw=true" width="500" alt="first draft board design"><p>
+
+It is by no means done, the board is more than half routed. But this is sufficient to test the idea and we can build on this further.
+
 --
 
 &copy; 2024 Christian Kuhtz
