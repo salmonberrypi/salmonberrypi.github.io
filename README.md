@@ -46,9 +46,9 @@ A few days later this is the result:
 
 <p align=center><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/first%20draft.png?raw=true" width="500" alt="first draft board design"><p>
 
-It is by no means done, the board is more than half routed. But this is sufficient to test the idea and we can build on this further.  The PSU is done, connectors chosen, pass through for the board stack sized and validated (~1mm clearance between the main and the not-mezzanine board below it).  This board represents a connected, fully remote manageable device.
+It is by no means done, the board is more than half routed. But this is sufficient to test the idea and we can build on this further.  The PSU is done, connectors chosen, pass through for the board stack sized and validated (~1mm clearance between the main and the mezzanine board below it).  This board represents a connected, fully remote manageable device.
 
-Before I go any further I'm going to try to do the not-mezzanine board design to see if I can do a quick and dirty validation of the same concept.  If so, I'll spend time on finishing routing the board(s).
+Before I go any further I'm going to try to do the mezzanine board design to see if I can do a quick and dirty validation of the same concept.  If so, I'll spend time on finishing routing the board(s).
 
 --
 
