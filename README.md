@@ -42,7 +42,7 @@ If we use a heat exchanger (like the readily available 40mm x 40mm x 12mm variet
 
 ## First Draft
 
-A few days later this is the result.
+A few days later this is the result:
 
 <p align=center><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/first%20draft.png?raw=true" width="500" alt="first draft board design"><p>
 
