@@ -91,7 +91,19 @@ While the high speed signals are all on this "second" connector, nothing else is
 
 ### alignment constraints
 
-Disconnecting the alignment issues with separate boards and increased menchanical tolerances to enable slight misalignments does work. But maybe a jig for aligning the non-floating connectors and introducing a separate board to board connector is more efficient for expansion?  I had sticker shock looking at high speed capable mated connectors for this purposes until I found Samtec LTH/LSH, which is not cheap but more reasonable and readily available. You might think that because they top out at 100 pins that this recreates the problem, but they have board alignment guides that reduce issues.  And there are connectors like the ERM8/ERF8 or Q2 terminal strip and socket strip that go up to 200 pins or more, one connector to rule them all, with board alignment guides.
+Disconnecting the alignment issues with separate boards and increased menchanical tolerances to enable slight misalignments does work. But maybe a jig for aligning the non-floating connectors and introducing a separate board to board connector is more efficient for expansion?  
+
+## Exploration
+
+I had sticker shock looking at high speed capable mated connectors for this purposes until I found [Samtec LTH/LSH](https://www.samtec.com/products/matedsetinfo?male=LTH-050-01-G-D-A-K-TR&female=LSH-050-01-G-D-A-K-TR), which is not cheap but more reasonable and readily available. You might think that because they top out at 100 pins that this recreates the problem, but they have board alignment guides that reduce issues.  And there are a few connectors alternatives, with some examples from Samtec below:
+
+| Series | Notes |
+|---|---|
+| [ERM8/ERF8](https://www.samtec.com/products/matedsetinfo?male=ERM8-100-09.0-L-DV-K&female=ERF8-100-05.0-L-DV-K) | about 2x the BOM cost of the LTH/LSH in 200 pin version; in effect it is about the same BOM cost since we only need 1x connector.  But they also come in smaller versions with board alignment pins. |
+
+Either option isn't ideal since we really just use the BOM cost of the native CM's to create an interposer.  What do we gain?  Should the entire format change?  Food for thought.
+
+To be continued..
 
 
 
