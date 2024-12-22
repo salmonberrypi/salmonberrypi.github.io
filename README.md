@@ -42,23 +42,21 @@ If we use a heat exchanger (like the readily available 40mm x 40mm x 12mm variet
 
 <p align=center><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/vertical.png?raw=true" width="700" alt="vertical view of single CM and heat exchanger as well as two CMs sandwiching a heat exchanger"></p>
 
-
 ## First Draft (December 21, 2024)
 
 A few days later this is the result:
 
-<p align=center><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/first%20draft.png?raw=true" width="500" alt="first draft board design"><p>
+<p align=center><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/first%20draft.png?raw=true" width="500" alt="first draft board design"></p>
 
 It is by no means done. The board is more than half routed. But this is sufficient to test the idea and we can build on this further.  The PSU is done, connectors chosen, pass through for the board stack sized and validated (~0.9mm clearance between the main and the mezzanine board below it; anything not a collision is good enough here).  This board represents a connected, fully remote manageable device.
 
 Before I go any further I'm going to try to do the mezzanine board design to see if I can do a quick and dirty validation of the same concept.  If so, I'll spend time on finishing routing the board(s).
-<p>
 
 ## Evolution? Evolution. (December 22, 2024)
 
 In an attempt to smoke this design out, I built a mezzanine template and mocked up various configurations on it.  M.2, multiple M.2, USB, you name it.
 
-<p align=center><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/mezz-template.png?raw=true" width="500" alt="first draft board design"><p>
+<p align=center><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/mezz-template.png?raw=true" width="500" alt="first draft board design"></p>
 
 It's definitely doable.  But it has a few lessons are learned.
 
