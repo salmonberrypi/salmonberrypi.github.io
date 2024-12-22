@@ -60,7 +60,7 @@ In an attempt to smoke this design out, I built a mezzanine template and mocked 
 
 <p align=center><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/mezz-template.png?raw=true" width="500" alt="first draft board design"><p>
 
-It's definitely doable.  But it has a few challenges.
+It's definitely doable.  But it has a few lessons are learned.
 
 
 ### space constraints
