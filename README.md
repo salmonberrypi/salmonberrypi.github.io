@@ -99,7 +99,7 @@ I had sticker shock looking at high speed capable mated connectors for this purp
 
 | Series | Notes |
 |---|---|
-| [ERM8/ERF8](https://www.samtec.com/products/matedsetinfo?male=ERM8-100-09.0-L-DV-K&female=ERF8-100-05.0-L-DV-K) | about 2x the BOM cost of the LTH/LSH in 200 pin version; in effect it is about the same BOM cost since we only need 1x connector.  But they also come in smaller versions with board alignment pins. |
+| [Samtec ERM8/ERF8](https://www.samtec.com/products/matedsetinfo?male=ERM8-100-09.0-L-DV-K&female=ERF8-100-05.0-L-DV-K) | about 2x the BOM cost of the LTH/LSH in 200 pin version; in effect it is about the same BOM cost since we only need 1x connector.  But they also come in smaller versions with board alignment pins. |
 
 Either option isn't ideal since we really just use the BOM cost of the native CM's to create an interposer.  What do we gain?  Should the entire format change?  Food for thought.
 
