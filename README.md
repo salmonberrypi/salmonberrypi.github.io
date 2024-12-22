@@ -99,11 +99,16 @@ I had sticker shock looking at high speed capable mated connectors for this purp
 
 | Series | Notes |
 |---|---|
-| [Samtec ERM8/ERF8](https://www.samtec.com/products/matedsetinfo?male=ERM8-100-09.0-L-DV-K&female=ERF8-100-05.0-L-DV-K) | about 2x the BOM cost of the LTH/LSH in 200 pin version; in effect it is about the same BOM cost since we only need 1x connector.  But they also come in smaller versions with board alignment pins. |
+| [Samtec ERM8/ERF8](https://www.samtec.com/products/matedsetinfo?male=ERM8-100-09.0-L-DV-K&female=ERF8-100-05.0-L-DV-K) | 0.8mm pitch, up to 200 pins, 7mm to 18mm stack height; about 2x the BOM cost of the LTH/LSH in 200 pin version; in effect it is about the same BOM cost since we only need 1x connector.  But they also come in smaller versions with board alignment pins. |
+| Samtec ERM6/ERF6 | similar, smaller pitch (0.635mm), up to 120 pins, 5mm stack height |
+| Samtec ERM5/ERF5 | similar, even smaller pitch (0.5mm), up to 150 pins, 7 to 12mm stack height|
 
-Either option isn't ideal since we really just use the BOM cost of the native CM's to create an interposer.  What do we gain?  Should the entire format change?  Food for thought.
+Let's be clear.  We need to good reasons to go this way since creating such an interposer creates BOM cost and that has to be understood well and at least answer these questions:
 
-To be continued..
+ What do we gain?  
+ Should the entire format change?
+ 
+ To be continued..
 
 
 
