@@ -59,6 +59,7 @@ In an attempt to smoke this design out, I built a mezzanine template and mocked 
 
 It's definitely doable.  But it has a few challenges.
 
+
 ### space constraints
 
 The Hirose/Amphenol low profile board to board connector is being reused.  This gives us two board stacking options and resulting clearances (per the CM datasheets).
@@ -76,13 +77,16 @@ Further, we have to be very careful with what protrudes through the main or the 
 
 In turn, we're severely limited to what we can do on these boards as-is.
 
+
 ### power constraints
 
 The second CM connector does not pass through power, only ground.  This means we either have to have pins with bottom entry sockets on the mainboard or external jumpers or even both to connect the required power. Fugly hack #3.  Let's design for passing power from board to board from the start.
 
+
 ### signal constraints
 
 While the high speed signals are all on this "second" connector, nothing else is.  That's ok for almost all the scenarios I can conceive of and really only one falls out: you couldn't expose the onboard USB2 connector for the CM this way unless you did away with negotiated CC1/CC2.  Not catastrophic.
+
 
 ### alignment constraints
 
