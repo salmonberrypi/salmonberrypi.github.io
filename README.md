@@ -4,7 +4,7 @@ I love distributed systems and distributed memory computing fabrics.  This proje
 
 Fast forward to 2024, picking this project up again but refocusing this work after some reflection.  And a couple of key tenets emerged.
 
-## Focus on managing rather than providing
+## Focus on managing rather than providing (December 16, 2024)
 
 **(Re)use commodity**. Let's review an example. Given the possibility of compactness and integration, an Ethernet switch on board is a great idea.  However, more cost-effective, scalable 3rd party products offer more flexibility if kept off-board as commodity Ethernet switching. We can always start another project if we really want to build our own Ethernet switch -- it's not critical path here. Any perceived compactness or efficiency gains don't offset the investment in jacks and cables, as these switching complexes are complicated in their own right. And maybe for some the PoE option is important.  Many chipsets are not readily available in small quantities or require NDA for documentation or other ODM agreements.  And Microchip's small Gigabit Ethernet chipsets are getting pretty long in the tooth. This isn't worth the trouble.
 
@@ -40,7 +40,7 @@ If we use a heat exchanger (like the readily available 40mm x 40mm x 12mm variet
 
 <p align=center><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/vertical.png?raw=true" width="700" alt="vertical view of single CM and heat exchanger as well as two CMs sandwiching a heat exchanger"></p>
 
-## 12/21/2024 First Draft
+## First Draft (December 21, 2024)
 
 A few days later this is the result:
 
