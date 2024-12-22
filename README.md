@@ -105,7 +105,7 @@ I had sticker shock looking at high speed capable mated connectors for this purp
 
 Let's be clear.  We need to good reasons to go this way since creating such an interposer creates BOM cost and that has to be understood well and at least answer these questions:
 
- What do we gain?  
+ What do we gain?  Lose?
  Should the entire format change?
  
  To be continued..
