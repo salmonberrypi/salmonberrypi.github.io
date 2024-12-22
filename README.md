@@ -4,6 +4,7 @@ I love distributed systems and distributed memory computing fabrics.  This proje
 
 Fast forward to 2024, picking this project up again but refocusing this work after some reflection.  And a couple of key tenets emerged.
 
+
 ## Focus on managing rather than providing (December 16, 2024)
 
 **(Re)use commodity**. Let's review an example. Given the possibility of compactness and integration, an Ethernet switch on board is a great idea.  However, more cost-effective, scalable 3rd party products offer more flexibility if kept off-board as commodity Ethernet switching. We can always start another project if we really want to build our own Ethernet switch -- it's not critical path here. Any perceived compactness or efficiency gains don't offset the investment in jacks and cables, as these switching complexes are complicated in their own right. And maybe for some the PoE option is important.  Many chipsets are not readily available in small quantities or require NDA for documentation or other ODM agreements.  And Microchip's small Gigabit Ethernet chipsets are getting pretty long in the tooth. This isn't worth the trouble.
@@ -22,6 +23,7 @@ The unit of a node should be **independent of traditional Pi or compute module f
 
 Quantities should always be 2<sup>n</sup> numbers to make scale out and gain **straight forward modularity**.  Not 48. Not 5, 6, or 7. Why? Trade ultimate efficiency for allowing combinations to work better.
 
+
 ## An Idea
 
 The dimensions of a [Raspberry Pi Compute module](https://datasheets.raspberrypi.com/cm5/cm5-datasheet.pdf) (CM) are 40mm W x 55mm H. We can create board(s) to host the CM and provide the needed interfaces to connect various umbillicals to, such as Ethernet, serial console, control signals, etc.
@@ -39,6 +41,7 @@ For cooling, we can place a heat sink or fan or both on this board stack to remo
 If we use a heat exchanger (like the readily available 40mm x 40mm x 12mm variety), we can optimize this design further when we place two of these board stacks back to back around a heat exchanger. A single CM is unlikely to produce enough heat to overwhelm the heat exchanger. And we can accomodate taller components on the board in this arrangement if we offset them to one side.  And irrespective of what we do on the underside for umbillicals, this design will work.
 
 <p align=center><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/vertical.png?raw=true" width="700" alt="vertical view of single CM and heat exchanger as well as two CMs sandwiching a heat exchanger"></p>
+
 
 ## First Draft (December 21, 2024)
 
