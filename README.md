@@ -91,7 +91,7 @@ While the high speed signals are all on this "second" connector, nothing else is
 
 ### alignment constraints
 
-Disconnecting the alignment issues with separate boards and increased menchanical tolerances to enable slight misalignments does work. But maybe a jig for aligning the non-floating connectors and introducing a separate board to board connector is more efficient for expansion?  I had sticker shock looking at high speed capable mated connectors for this purposes until I found Samtec LTH/LSH, which is not cheap but more reasonable and readily available. You might think that because they top out at 100 pins that this recreates the problem, but they have board alignment guides that reduce issues.  And there are connectors like the ERM8 or Q2 terminal strip and socket strip that go up to 200 pins or more, one connector to rule them all, with board alignment guides.
+Disconnecting the alignment issues with separate boards and increased menchanical tolerances to enable slight misalignments does work. But maybe a jig for aligning the non-floating connectors and introducing a separate board to board connector is more efficient for expansion?  I had sticker shock looking at high speed capable mated connectors for this purposes until I found Samtec LTH/LSH, which is not cheap but more reasonable and readily available. You might think that because they top out at 100 pins that this recreates the problem, but they have board alignment guides that reduce issues.  And there are connectors like the ERM8/ERF8 or Q2 terminal strip and socket strip that go up to 200 pins or more, one connector to rule them all, with board alignment guides.
 
 
 
