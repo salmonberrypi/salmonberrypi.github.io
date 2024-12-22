@@ -51,7 +51,44 @@ It is by no means done. The board is more than half routed. But this is sufficie
 Before I go any further I'm going to try to do the mezzanine board design to see if I can do a quick and dirty validation of the same concept.  If so, I'll spend time on finishing routing the board(s).
 
 
-## Evolution? (December 22, 2024)
+## Evolution? Evolution. (December 22, 2024)
+
+In an attempt to smoke this design out, I built a mezzanine template and mocked up various configurations on it.  M.2, multiple M.2, USB, you name it.
+
+<p align=center><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/mezz%20template.png?raw=true" width="500" alt="first draft board design"><p>
+
+It's definitely doable.  But it has a few challenges.
+
+### space constraints
+
+The Hirose/Amphenol low profile board to board connector is being reused.  This gives us two board stacking options and resulting clearances (per the CM datasheets).
+
+|stacked height|clearance|
+|---|---|
+|1.5mm|0mm|
+|4.0mm|2.5mm|
+
+This is sufficient to mate the mezzanine, but as anticipated there is no room on the underside of the main board or on the "top" of the mezzanine where the connector passes through to the main board.  There's roughly 0.9mm clerance, which is sufficient to prevent electrical contact and reasonably space mechanically.
+
+However, it is pretty wasteful in the end.  Nothing can be placed under the CM on the main board other than traces and vias (unless you carefully navigate around the underside of the CM perhaps, but that's are really fugly hack).  And nothing can be places on the "top" of the mezzanine.
+
+Further, we have to be very careful with what protrudes through the main or the mezzanine board as not to impact the other board. Even if we don't use THT parts and restrict to SMD only, there are parts with locating pins out of plastic or metal or both that quickly invade this gap.  It can be solved by cutting away clearance in the main board for avoiding interference but that's also fugly hack #2.
+
+In turn, we're severely limited to what we can do on these boards as-is.
+
+### power constraints
+
+The second CM connector does not pass through power, only ground.  This means we either have to have pins with bottom entry sockets on the mainboard or external jumpers or even both to connect the required power. Fugly hack #3.  Let's design for passing power from board to board from the start.
+
+### signal constraints
+
+While the high speed signals are all on this "second" connector, nothing else is.  That's ok for almost all the scenarios I can conceive of and really only one falls out: you couldn't expose the onboard USB2 connector for the CM this way unless you did away with negotiated CC1/CC2.  Not catastrophic.
+
+### alignment constraints
+
+Disconnecting the alignment issues with separate boards and increased menchanical tolerances to enable slight misalignments does work. But maybe a jig for aligning the non-floating connectors and introducing a separate board to board connector is more efficient for expansion?  I had sticker shock looking at high speed capable mated connectors for this purposes until I found Samtec LTH/LSH, which is not cheap but more reasonable and readily available. You might think that because they top out at 100 pins that this recreates the problem, but they have board alignment guides that reduce issues.  And there are connectors like the Q2 terminal strip and socket strip that go up to 200 pins, one connector to rule them all, with board alignment guides.
+
+
 
 
 --
