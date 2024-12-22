@@ -68,7 +68,7 @@ The Hirose/Amphenol low profile board to board connector is being reused.  This 
 |1.5mm|0mm|
 |4.0mm|2.5mm|
 
-This is sufficient to mate the mezzanine, but as anticipated there is no room on the underside of the main board or on the "top" of the mezzanine where the connector passes through to the main board.  There's roughly 0.9mm clerance, which is sufficient to prevent electrical contact and reasonably space mechanically.
+This is sufficient to mate the mezzanine, but as anticipated there is no room on the underside of the main board or on the "top" of the mezzanine where the connector passes through to the main board.  There's roughly 0.9mm clerance between the boards, which is sufficient to prevent electrical contact and reasonably space mechanically.
 
 However, it is pretty wasteful in the end.  Nothing can be placed under the CM on the main board other than traces and vias (unless you carefully navigate around the underside of the CM perhaps, but that's are really fugly hack).  And nothing can be places on the "top" of the mezzanine.
 
