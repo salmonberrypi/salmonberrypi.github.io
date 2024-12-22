@@ -21,7 +21,7 @@ Storage can't be an afterthought or blended in with general-purpose compute: **n
 
 The unit of a node should be **independent of traditional Pi or compute module form factor**. It should be defined by control interfaces and not waste real estate on a specific form factor.  We can print mounts rather than waste PCB on them. More cost-effective and flexible. We can split the CM4/5 footprint in half and only use what we need.
 
-Quantities should always be 2<sup>n</sup> numbers to make scale out and gain **straight forward modularity**.  Not 48. Not 5, 6, or 7. Why? Trade ultimate efficiency for allowing combinations to work better.
+Should quantities always be 2<sup>n</sup> numbers to make scale out and gain **straight forward modularity**?  Not 48. Not 5, 6, or 7. Why? Trade ultimate efficiency for allowing combinations to work better.  12/22/2024: OTOH, this could be very wasteful in scenarios were odd or prime numbers are great for resiliency. This needs more thought.
 
 
 ## An Idea
