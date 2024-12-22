@@ -72,7 +72,7 @@ This is sufficient to mate the mezzanine, but as anticipated there is no room on
 
 However, it is pretty wasteful in the end.  Nothing can be placed under the CM on the main board other than traces and vias (unless you carefully navigate around the underside of the CM perhaps, but that's are really fugly hack).  And nothing can be places on the "top" of the mezzanine.
 
-Further, we have to be very careful with what protrudes through the main or the mezzanine board as not to impact the other board. Even if we don't use THT parts and restrict to SMD only, there are parts with locating pins out of plastic or metal or both that quickly invade this gap.  It can be solved by cutting away clearance in the main board for avoiding interference but that's also fugly hack #2.
+Further, we have to be very careful with what protrudes through the main or the mezzanine board as not to impact the other board. Even if we don't use THT parts and restrict to SMD only, there are parts with locating pins out of plastic or metal or both that quickly invade this gap.  For things like power connectors, THT might be beneficial for routing, plane connection, and stability of the connector and represents a compromise.  It can be solved by cutting away clearance in the main board for avoiding interference but that's also fugly hack #2.
 
 In turn, we're severely limited to what we can do on these boards as-is.
 
