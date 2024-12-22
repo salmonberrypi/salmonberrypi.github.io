@@ -103,6 +103,7 @@ I had sticker shock looking at high speed capable mated connectors for this purp
 | Samtec ERM6/ERF6 | similar, smaller pitch (0.635mm), up to 120 pins, 5mm stack height |
 | Samtec ERM5/ERF5 | similar, even smaller pitch (0.5mm), up to 150 pins, 7 to 12mm stack height|
 
+<p>
 Let's be clear.  We need to good reasons to go this way since creating such an interposer creates BOM cost and that has to be understood well and at least answer these questions:
 
  What do we gain?  Lose?
