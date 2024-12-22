@@ -52,7 +52,7 @@ A few days later this is the result:
 It is by no means done. The board is more than half routed. But this is sufficient to test the idea and we can build on this further.  The PSU is done, connectors chosen, pass through for the board stack sized and validated (~0.9mm clearance between the main and the mezzanine board below it; anything not a collision is good enough here).  This board represents a connected, fully remote manageable device.
 
 Before I go any further I'm going to try to do the mezzanine board design to see if I can do a quick and dirty validation of the same concept.  If so, I'll spend time on finishing routing the board(s).
-
+<p>
 
 ## Evolution? Evolution. (December 22, 2024)
 
