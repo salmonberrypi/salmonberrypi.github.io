@@ -51,6 +51,9 @@ It is by no means done. The board is more than half routed. But this is sufficie
 Before I go any further I'm going to try to do the mezzanine board design to see if I can do a quick and dirty validation of the same concept.  If so, I'll spend time on finishing routing the board(s).
 
 
+## Evolution? (December 22, 2024)
+
+
 --
 
 &copy; 2024 Christian Kuhtz
