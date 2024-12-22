@@ -55,7 +55,7 @@ Before I go any further I'm going to try to do the mezzanine board design to see
 
 In an attempt to smoke this design out, I built a mezzanine template and mocked up various configurations on it.  M.2, multiple M.2, USB, you name it.
 
-<p align=center><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/mezz%20template.png?raw=true" width="500" alt="first draft board design"><p>
+<p align=center><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/mezz-template.png?raw=true" width="500" alt="first draft board design"><p>
 
 It's definitely doable.  But it has a few challenges.
 
