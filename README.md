@@ -95,7 +95,7 @@ Disconnecting the alignment issues with separate boards and increased menchanica
 
 ## Exploration
 
-I had sticker shock looking at high speed capable mated connectors for this purposes until I found [Samtec LTH/LSH](https://www.samtec.com/products/matedsetinfo?male=LTH-050-01-G-D-A-K-TR&female=LSH-050-01-G-D-A-K-TR), which is not cheap but more reasonable and readily available. You might think that because they top out at 100 pins that this recreates the problem, but they have board alignment guides that reduce issues.  And there are a few connectors alternatives, with some examples from Samtec below:
+I had sticker shock looking at high speed capable mated connectors for this purposes until I found [Samtec LTH/LSH](https://www.samtec.com/products/matedsetinfo?male=LTH-050-01-G-D-A-K-TR&female=LSH-050-01-G-D-A-K-TR), which is not cheap but more reasonable and readily available. You might think that because they top out at 100 pins that this recreates the problem, but they have board alignment guides that reduce issues.  And there are a few connectors alternatives, here's an example from Samtec:
 
 | Series | Notes |
 |---|---|
