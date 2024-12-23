@@ -109,6 +109,10 @@ Let's be clear.  We need to good reasons to go this way since creating such an i
  What do we gain?  Lose?
  Should the entire format change?
  
+ ## RevC
+
+ Simplifying the board by focusing on core use case, addressing some of the concerns above, cleaning up connectors.
+
  To be continued..
 
 
