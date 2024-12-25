@@ -145,6 +145,8 @@ I enlarged the board slightly to 118x44mm in the redesign for Rev C.This seems l
 
 Much on the board has been refined, although the concept remains. This included going through a bit of work in removing all THT components to prevent any interference issues between the main board and the mezzanine.  This was mostly successful, allthough a cutout where the Ethernet jack lives is needed as there doesn't seem to be a pure SMD with magnetics connector with LEDs built in for me to use; I don't really want to place more LEDs on the board.  Interestingly, the SMD Ethernet jack and the ESD diodes are now trivial and clean to route, whereas before it was a bit of a mess.
 
+I did introduce one new THT'ish feature.  There's now a pass through for the +12V, +5V, switched +5V LED and GND rails.  Any mezzanine needing power can derive whatever it needs without worrying about pushing the LDO on the CM too hard, which is limited to 600mA at +3V3. A mezzanine can now insert pins through the bottom of the main board to connect to these power rails without needed an external connection.
+
 ### LEDs
 
 All the LEDs have their own MOSFET drivers and a MOSFET switch to turn on or off all LEDs except one.  I'm sourcing all [0603 chip LEDs from W&uuml;rth Elektronik](https://www.digikey.com/en/products/filter/led-indication-discrete/105?s=N4IgjCBcpgbFoDGUBmBDANgZwKYBoQB7KAbRAGYBOAJgBZ4BdAgBwBcoQBlVgJwEsAdgHMQAXwLUADNQAcCEMkjps%2BIqQqVyYcuRBMQbDt37CxBALS15i5bgIA3Aakx21kMrXKTKAVj0t2SBAzEHNqayheAFdVYncQPwZxUMoIyGjY9Qgk5PhoED4AEw4tVICjXkERAlYAT2YcDjQsZFFRIA).
