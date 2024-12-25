@@ -109,14 +109,75 @@ Let's be clear.  We need to good reasons to go this way since creating such an i
  What do we gain?  Lose?
  Should the entire format change?
  
- ## RevC
+ ## Rev C
 
  Simplifying the board by focusing on core use case, addressing some of the concerns above, cleaning up connectors.
 
- To be continued..
+### Board Design
 
+Going back to refining what started with [An Idea](#an-idea) above, I took a look at what the panels for JLCPCB look like, and this is the calculation I came up with.
 
+|                       | L/D      | W        |
+| --------------------- | -------- | -------- |
+| board dimensions      | 118      | 44       |
+|                       |          |          |
+| panel max size        | 475      | 475      |
+|                       |          |          |
+| edge width            | 0        | 0        |
+|                       |          |          |
+| effective panel size  | 475      | 475      |
+|                       |          |          |
+| max boards            | 4.025424 | 10.79545 |
+| rounded boards        | 4        | 10       |
+|                       |          |          |
+| optimal board size    | 118.75   | 47.5     |
+| waste                 | 0.75     | 3.5      |
+|                       |          |          |
+| 19" rack              | 1100     | 450      |
+| plumbing              | 40       | 0        |
+| effective board size  | 158.75   | 47.5     |
+| boards                | 6.929134 | 9.473684 |
+| rounded boards        | 6        | 9        |
+| optimal assembly size | 183.3333 | 50       |
+| waste                 | 24.58333 | 2.5      |
 
+So, as a result, I enlarged the board slightly to 118x44 in the redesign for Rev C. This seems like a reasonable compromise.
+
+Much on the board has been refined, although the concept remains. This included going through a bit of work in removing all THT components to prevent any interference issues between the main board and the mezzanine.  This was mostly successful, allthough a cutout where the Ethernet jack lives is needed as there doesn't seem to be a pure SMD Magjack-style connector with LEDs built in for me to use; I don't really want to place more LEDs on the board.
+
+### LEDs
+
+All the LEDs have their own MOSFET drivers and a MOSFET switch to turn on or off all LEDs except one.  I'm sourcing all [0603 chip LEDs from W&uuml;rth Elektronik](https://www.digikey.com/en/products/filter/led-indication-discrete/105?s=N4IgjCBcpgbFoDGUBmBDANgZwKYBoQB7KAbRAGYBOAJgBZ4BdAgBwBcoQBlVgJwEsAdgHMQAXwLUADNQAcCEMkjps%2BIqQqVyYcuRBMQbDt37CxBALS15i5bgIA3Aakx21kMrXKTKAVj0t2SBAzEHNqayheAFdVYncQPwZxUMoIyGjY9Qgk5PhoED4AEw4tVICjXkERAlYAT2YcDjQsZFFRIA).
+
+These are the candidates:
+
+| color  | selected | PN (DigiKey)                                                                                             | cost (single) | mcd | Vf [V] | If[mA] | R @ 5V, 50% It |
+| ------ | -------- | -------------------------------------------------------------------------------------------------------- | ------------- | --- | ------ | ------ | -------------- |
+| Red    | X        | [150060SS75020](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/150060SS75020/10468226) | 0.33          | 70  | 1.9    | 20     | 160R           |
+| Red    |          | [150060RS75020](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/150060RS75020/10468240) | 0.33          | 100 | 2      | 20     | 150R           |
+| Green  | X        | [150060VS75020](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/150060VS75020/10468264) | 0.33          | 50  | 2      | 20     | 150R           |
+| Green  |          | [150060GS75020](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/150060GS75020/10468246) | 0.33          | 700 | 3.2    | 20     | 91R            |
+| Amber  | X        | [150060AS75020](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/150060AS75020/10468247) | 0.33          | 140 | 2      | 20     | 150R           |
+| Yellow | X        | [150060YS75020](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/150060YS75020/10468235) | 0.33          | 130 | 2      | 20     | 150R           |
+| Blue   | X        | [150060BS75020](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/150060BS75020/10468228) | 0.33          | 150 | 3.2    | 20     | 91R            |
+
+and
+
+| color | selected | PN (DigiKey)                                                                                                                                                                                                                                                                                                                                                    | cost (single) | mcd | Vf [V] | It [mA] | R @ 5V, 50% It |
+| ----- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | --- | ------ | ------- | -------------- |
+| White | X        | [150060WS75000](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/150060WS75000/25589270?s=N4IgjCBcpgbFoDGUBmBDANgZwKYBoQB7KAbRAGYBOAJgBZ4BdAgBwBcoQBlVgJwEsAdgHMQAXwLkA7AhDJI6bPiKkQtamAAMADg0gmINh279hYgtQ3UtMuQtwFikMlXJhy5PS3aQuvQSPEQAFpaG1RMexAANwFwxQcVWnINSgBWTwNvEDNg6jDIXgBXJUcydIZAoMp8opKVCArA%2BGgQPgATDldqryM-UwJWAE9mHA40LGRRUSA) | 0.22          | 250 | 2.8    | 20      | 110R           |
+
+|color|function|
+|---|---|
+|red |CM power|
+|green|CM activity|
+|green|+12V rail ok|
+|green|+5V rail ok|
+|green|+3V3 rail ok|
+|green|PSU enable|
+|white|attention/ID|
+
+To be continued..
 
 --
 
