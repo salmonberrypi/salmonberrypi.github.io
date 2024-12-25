@@ -179,9 +179,7 @@ and
 
 ### current state of the board
 
-<p align=center><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/revcbare.png?raw=true" width="200" alt="rev c evolution bare"></p>
-
-<p align=center><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/revcsmd.png?raw=true" width="200" alt="rev c evolution with SMD components"></p>
+<p align=center><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/revcbare.png?raw=true" width="200" alt="rev c evolution bare"><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/revcsmd.png?raw=true" width="200" alt="rev c evolution with SMD components"></p>
 
 To be continued..
 
