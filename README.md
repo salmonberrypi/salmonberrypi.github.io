@@ -187,7 +187,7 @@ and
 
 While the main board is complete with compute nodes, it is obviously a compromise.  For storage nodes, for example, this is what a mezzanine might look like with M.2, 2x USB, and HDMI.
 
-<p align=center><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/revcmezztop.png?raw=true" width="170" alt="rev c evolution with SMD components"><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/revcmezzbottom.png?raw=true" width="200" alt="rev c evolution with SMD components"></p>
+<p align=center><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/revcmezztop.png?raw=true" width="180" alt="rev c evolution with SMD components"><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/revcmezzbottom.png?raw=true" width="200" alt="rev c evolution with SMD components"></p>
 
 You might ask, why only 2230 and 2280.  Why no 22110?  Because those are really esoteric and niche formats for storage.  And even a Coral TPU in (B+)M-key is a 2280.
 
