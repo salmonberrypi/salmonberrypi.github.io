@@ -185,7 +185,7 @@ and
 
 ### mezzanine validation
 
-While the main board is complete with compute nodes, it is obviously a compromise.  For storage nodes, for example, this is what a mezzanine might look like with M.2, 2x USB, and HDMI.
+While the main board is complete for compute nodes, it does represent a compromise. Or an optimization.  For storage nodes, for example, this is what a mezzanine might look like with M.2, 2x USB, and HDMI.
 
 <p align=center><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/revcmezztop.png?raw=true" width="175" alt="rev c evolution with SMD components"><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/revcmezzbottom.png?raw=true" width="200" alt="rev c evolution with SMD components"></p>
 
