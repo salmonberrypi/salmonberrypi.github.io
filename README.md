@@ -189,7 +189,7 @@ While the main board is complete with compute nodes, it is obviously a compromis
 
 <p align=center><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/revcmezztop.png?raw=true" width="175" alt="rev c evolution with SMD components"><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/revcmezzbottom.png?raw=true" width="200" alt="rev c evolution with SMD components"></p>
 
-You might ask, why only 2230 and 2280.  Why no 22110?  Because those are esoteric / niche formats for storage.  And even a Coral TPU in (B+)M-key is a 2280.
+You might ask, why only 2230 and 2280.  Why no 22110?  Because those other options are esoteric / niche formats for storage.  And even a Coral TPU in (B+)M-key is a 2280.
 
 To be continued..
 
