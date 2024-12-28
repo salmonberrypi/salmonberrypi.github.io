@@ -169,19 +169,25 @@ and
 | ----- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | --- | ------ | ------- | -------------- |
 | White | X        | [150060WS75000](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/150060WS75000/25589270?s=N4IgjCBcpgbFoDGUBmBDANgZwKYBoQB7KAbRAGYBOAJgBZ4BdAgBwBcoQBlVgJwEsAdgHMQAXwLkA7AhDJI6bPiKkQtamAAMADg0gmINh279hYgtQ3UtMuQtwFikMlXJhy5PS3aQuvQSPEQAFpaG1RMexAANwFwxQcVWnINSgBWTwNvEDNg6jDIXgBXJUcydIZAoMp8opKVCArA%2BGgQPgATDldqryM-UwJWAE9mHA40LGRRUSA) | 0.22          | 250 | 2.8    | 20      | 110R           |
 
-|color|function|
-|---|---|
-|red |CM power|
-|green|CM activity|
-|green|+12V rail ok|
-|green|+5V rail ok|
-|green|+3V3 rail ok|
-|green|PSU enable|
-|white|attention/ID|
+|color|function|switched|
+|---|---|---|
+|red |CM power|Y|
+|green|CM activity|Y|
+|green|+12V rail ok|N|
+|green|+5V rail ok|N|
+|green|+3V3 rail ok|N|
+|green|PSU enable|Y|
+|white|attention/ID|N|
 
 ### current state of the board
 
 <p align=center><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/revcbare.png?raw=true" width="200" alt="rev c evolution bare"><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/revcsmd.png?raw=true" width="200" alt="rev c evolution with SMD components"></p>
+
+### mezzanine validation
+
+While the main board is complete with compute nodes, it is obviously a compromise.  For storage nodes, for example, this is what a mezzanine might look like with M.2, 2x USB, and HDMI.
+
+<p align=center><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/revcbare.png?raw=true" width="200" alt="rev c evolution bare"><img src="https://github.com/salmonberrypi/salmonberrypi.github.io/blob/main/revcmezz.png?raw=true" width="200" alt="rev c evolution with SMD components"></p>
 
 To be continued..
 
