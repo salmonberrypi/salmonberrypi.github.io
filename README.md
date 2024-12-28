@@ -191,7 +191,7 @@ While the main board is complete for compute nodes, it does represent a compromi
 
 You might ask, why only 2230 and 2280.  Why no 22110?  Because those other options are esoteric / niche formats for storage and not worth the routing complication.  And even a Coral TPU in (B+)M-key is a 2280.
 
-The USB jacks are all USB-C and the HDMI jack is a micro HDMI. Just like a Pi 5, except no OTG.
+The USB jacks are all USB-C and the HDMI jack is a micro HDMI. Just like a Pi 5, except no OTG.  It is unlikely the HDMI jack will survive in the long run as there's a serial console already.
 
 To be continued..
 
