@@ -193,6 +193,10 @@ You might ask, why only 2230 and 2280.  Why no 22110?  Because those other optio
 
 The USB jacks are all USB-C and the HDMI jack is a micro HDMI. Just like a Pi 5, except no OTG.  It is unlikely the HDMI jack will survive in the long run as there's a serial console already.
 
+## Plumbing (December 29, 2024)
+
+The 40x40x12mm aluminum cooling blocks arrived and so did some tubing and spring clamps.  7mm ID or 9/32" silicon hose tubing and 9mm spring clamps work great.
+
 To be continued..
 
 --
